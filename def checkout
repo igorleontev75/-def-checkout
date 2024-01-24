@@ -1,0 +1,6 @@
+   def checkout(self, branch):
+        if branch in self.branches:
+            self.current_branch = branch
+            print(f"Switched to branch: {branch}")
+        else:
+            print(f"Branch '{branch}' does not exist")
